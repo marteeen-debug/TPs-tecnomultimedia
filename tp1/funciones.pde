@@ -1,6 +1,8 @@
 PFont fuente1;
 int posXring = 35;
 int posYring = 453;
+int colorboton = 255;
+
 
 void boton() {
 
@@ -11,10 +13,10 @@ void boton() {
   fuente1 = createFont("sonicfont.TTF", 32);
   textFont(fuente1);
   textAlign(CENTER, CENTER);
-  fill(255);
+  fill(colorboton);
   text("Iniciar creditos", width/2, height/2+200);
   fill(#49A9E8);
- circle(75, 489, 110);
+  circle(75, 489, 110);
 
   ring0.resize(80, 80);
   image(ring0, posXring, posYring);
@@ -30,6 +32,7 @@ void pantalla0() {
 }
 
 void pantalla1() {
+  
   PImage  fondo1 ;
   fondo1 = loadImage("fondo1.jpg");
   image(fondo1, 0, 0);
