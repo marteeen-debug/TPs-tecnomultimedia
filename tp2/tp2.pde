@@ -2,6 +2,8 @@ PImage ejemplo;
 int fondo = 0;
 boolean toggle, toggle2 = false;
 
+//https://www.youtube.com/watch?v=LC6GBcp8RWE
+
 void setup() {
   ejemplo = loadImage("ejemplo.png");
   size(800, 400);
